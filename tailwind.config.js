@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Vazir"],
+        "press-start": ['"Press Start 2P"', "cursive"],
       },
       screens: {
         "2xs": "375px",

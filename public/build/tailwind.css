@@ -565,20 +565,23 @@ video {
 .h-12 {
   height: 3rem;
 }
-.h-screen {
-  height: 100vh;
+.h-\[100px\] {
+  height: 100px;
 }
 .w-full {
   width: 100%;
 }
-.w-36 {
-  width: 9rem;
+.w-\[70px\] {
+  width: 70px;
 }
 .w-\[120px\] {
   width: 120px;
 }
 .w-20 {
   width: 5rem;
+}
+.w-\[100px\] {
+  width: 100px;
 }
 .flex-col {
   flex-direction: column;
@@ -613,6 +616,9 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
+.bg-transparent {
+  background-color: transparent;
+}
 .p-4 {
   padding: 1rem;
 }
@@ -637,6 +643,9 @@ video {
 .text-center {
   text-align: center;
 }
+.font-press-start {
+  font-family: "Press Start 2P", cursive;
+}
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -657,6 +666,18 @@ video {
   font-size: 1.5rem;
   line-height: 2rem;
 }
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
 .text-gray-100 {
   --tw-text-opacity: 1;
   color: rgb(243 244 246 / var(--tw-text-opacity));
@@ -669,9 +690,35 @@ video {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
+.active\:mt-0\.5:active {
+  margin-top: 0.125rem;
+}
+.active\:mt-0:active {
+  margin-top: 0px;
+}
+.active\:translate-y-1:active {
+  --tw-translate-y: 0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.active\:translate-y-\[1px\]:active {
+  --tw-translate-y: 1px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 .active\:bg-gray-300:active {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+.active\:pt-0\.5:active {
+  padding-top: 0.125rem;
+}
+.active\:pt-0:active {
+  padding-top: 0px;
+}
+.active\:pb-0\.5:active {
+  padding-bottom: 0.125rem;
+}
+.active\:pb-0:active {
+  padding-bottom: 0px;
 }
 @media (min-width: 768px) {
 

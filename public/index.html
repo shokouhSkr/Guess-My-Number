@@ -6,19 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guess my number</title>
     <link rel="stylesheet" href="./build/tailwind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="mt-4 h-fit bg-gray-800 text-gray-100">
-    <header class="mb-6 flex justify-between p-4">
-      <button class="bg-gray-100 px-3 py-1 text-gray-800 active:bg-gray-300">Again!</button>
+  <body class="mt-4 h-fit bg-gray-800 font-press-start text-gray-100">
+    <header class="mb-6 flex justify-between p-4 text-xs">
+      <button
+        id="againBtn"
+        class="bg-gray-100 px-3 py-1 text-gray-800 active:translate-y-[1px] active:bg-gray-300"
+      >
+        Again!
+      </button>
       <p>(Between 1 and 50)</p>
     </header>
     <section class="mb-[55px]">
-      <h1 class="mb-[50px] text-center text-3xl">Guess My Number!</h1>
+      <h1 class="mb-[50px] text-center text-lg">Guess My Number!</h1>
       <div class="relative flex items-center justify-center pt-5">
         <span class="h-1.5 w-full bg-gray-100"></span>
         <span
           id="secretNumber"
-          class="absolute left-0 right-0 mx-auto grid h-[70px] w-36 place-items-center bg-gray-100 text-5xl text-gray-800"
+          class="absolute left-0 right-0 mx-auto grid h-[70px] w-[70px] place-items-center bg-gray-100 text-3xl text-gray-800"
           >?</span
         >
       </div>
@@ -27,21 +38,21 @@
       <div class="mb-8 flex flex-col items-center">
         <input
           type="number"
-          id="guess"
-          class="mb-4 h-12 w-[120px] border-4 border-gray-100 bg-gray-800 p-6 text-center text-4xl focus:outline-none"
+          id="guessNumber"
+          class="mb-4 h-12 w-[120px] border-4 border-gray-100 bg-transparent p-6 text-center text-3xl focus:outline-none"
         />
         <button
-          id="check"
-          class="w-20 bg-gray-100 px-2 py-1 text-lg text-gray-800 active:bg-gray-300"
+          id="checkBtn"
+          class="w-20 bg-gray-100 px-2 py-1 text-sm text-gray-800 active:translate-y-[1px] active:bg-gray-300"
         >
           Check!
         </button>
       </div>
       <div>
-        <p id="message" class="mb-4 text-2xl">Start guessing...</p>
-        <div class="flex flex-col gap-y-1 text-lg">
-          <p>💯 Score: <span id="score">20</span></p>
-          <p>🥇 Highscore: <span>0</span></p>
+        <p id="message" class="mb-4">Start guessing...</p>
+        <div class="flex flex-col gap-y-1 text-sm">
+          <p>💯 Score: <span id="score">10</span></p>
+          <p>🥇 Highscore: <span id="highScore">0</span></p>
         </div>
       </div>
     </main>
